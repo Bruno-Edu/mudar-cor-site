@@ -5,6 +5,8 @@
 }
   
 /* Ordem das bolinhas*/
+/*Alguns navegadores possuem suporte para o has() do css, alguns não aceitam e por isso existe um arquivo em JavaScript para dar esse suporte*/
+
 .dark,
 :root:has(#dark:checked){ /*Se o root CONTÉM(has) o elemento dark com checked, vai mudar*/
   --bg-color:#121214;
