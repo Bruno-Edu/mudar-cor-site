@@ -1,0 +1,100 @@
+*{
+  padding: 0; /*Tirando (espaços) padding e margin de objetos criados no html*/
+  margin: 0; 
+  box-sizing: border-box;
+}
+  
+/* Ordem das bolinhas*/
+.dark,
+:root:has(#dark:checked){ /*Se o root CONTÉM(has) o elemento dark com checked, vai mudar*/
+  --bg-color:#121214;
+  --text-color: white;
+}
+
+.light,
+:root{  /*Não necessita do has() pois no html ele recebe o checked*/
+  --bg-color:white;
+  --text-color: #121214;
+}
+
+.dark,
+:root:has(#dark:checked){ /*Se o root CONTÉM(has) o elemento dark com checked, vai mudar*/
+  --bg-color:#121214;
+  --text-color: white;
+}
+
+.blue,
+:root:has(#blue:checked){ /*Se o root CONTÉM(has) o elemento blue com checked, vai mudar*/
+  --bg-color: #d6d6ff;
+  --text-color: rgb(1,79,121);
+}
+
+.green,
+:root:has(#green:checked){ /*Se o root CONTÉM(has) o elemento green com checked, vai mudar*/
+  --bg-color:	#eBfff5;
+  --text-color: rgb(8,85,41);
+}
+
+/* Estilizando o documento*/
+body{
+  font-family: sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+article{
+  width: 30rem;
+  margin: 2rem auto;
+}
+
+article h2{
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+article p{
+  opacity: 0.7;
+}
+
+ul{
+  display: flex;
+  list-style: none; /*Tira pontinhos da lista*/
+  gap: 1rem;
+  background-color: white;
+  box-shadow: 0 0 1rem rgb(0 0 0 / 0.2);
+  padding: 1rem;
+  border-radius: 8px;
+  position: fixed;
+  bottom: 1rem;
+  left: 50%; /*Posiciona o elemento depois de 50% da tela*/
+  transform: translateX(-50%); /*Voltando a metade do elemento*/
+}
+
+/*Seletor de Atributo*/
+
+input[type="radio"]{ /*Seletor de Atributo*/
+  appearance: none; /*Tirando aparência padrão que o navegador coloca*/
+  border: 2px solid var(--input-color);
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked{ /*A propriedade que está habilitada*/
+  background-color: var(--input-color) /*Define a cor da bolinha*/
+}
+
+#dark{
+  --input-color:black;
+}
+
+#light{
+  --input-color:grey;
+}
+
+#blue{
+  --input-color:blue;
+}
+#green{
+  --input-color:green;
+}

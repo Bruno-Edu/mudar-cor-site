@@ -2,6 +2,7 @@
 
 <p align="center">
 Site feito através de um evento gratuito, promovido pela Rocketseat para ensino de tecnologias WEB.
+Alguns códigos possuem comentários para ajudar a compreender o que está sendo feito.
 </p>
 
 
