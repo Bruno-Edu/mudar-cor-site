@@ -10,8 +10,7 @@ Alguns códigos possuem comentários para ajudar a compreender o que está sendo
 <br>
 
 <p align="center">
-  <img alt="Aparência Site Preto" src="./asset/img/aparencia-black.png" width="50%">
-  <img alt="Aparência Site Azul" src="./asset/img/aparencia-blue.png" width="50%">
+  <img alt="Aparência Site Preto" src="./asset/img/cores-site.jpg" width="100%">
 </p>
 
 ## 🚀 Tecnologias
